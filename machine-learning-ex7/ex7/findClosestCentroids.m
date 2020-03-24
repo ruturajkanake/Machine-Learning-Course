@@ -21,8 +21,6 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
-
-
 for i = 1:size(X,1)
     dist_1 = sum((X(i,:)-centroids(1,:)).^2);
     itr = 1;
@@ -38,7 +36,6 @@ for i = 1:size(X,1)
     end
     idx(i) = itr;
 end
-
 
 % =============================================================
 
